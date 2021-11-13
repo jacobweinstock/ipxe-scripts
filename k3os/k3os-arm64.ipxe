@@ -1,7 +1,7 @@
 #!ipxe
 
 # Location of Kernel/Initrd images
-set base-url https://github.com/rancher/k3os/releases/download/v0.20.11-k3s2r1/
+set base-url https://github.com/rancher/k3os/releases/download/v0.20.11-k3s2r1
 
 kernel ${base-url}/k3os-vmlinuz-arm64 k3os.password=rancher
 initrd ${base-url}/k3os-initrd-arm64
