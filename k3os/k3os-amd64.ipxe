@@ -1,0 +1,9 @@
+#!ipxe
+
+# Location of Kernel/Initrd images
+set base-url https://github.com/rancher/k3os/releases/download/v0.7.1/
+
+kernel ${base-url}/k3os-vmlinuz-amd64 k3os.password=rancher
+initrd ${base-url}/k3os-initrd-amd64
+
+boot
